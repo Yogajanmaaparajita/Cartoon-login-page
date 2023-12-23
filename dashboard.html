@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Character Creator Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    header {
+      background-color: #ffcc66;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .dashboard-content {
+      padding: 20px;
+    }
+
+    .welcome-message {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Add specific styling for different sections as needed */
+
+    .character-creator {
+      background-color: #f6f6f6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery {
+      background-color: #f6f6f6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cartoon Character Creator</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="https://www.canva.com/create/cartoons/">Character Creator</a>
+    <a href="https://pixabay.com/images/search/cartoon%20characters/">Gallery</a>
+  </nav>
+
+  <div class="dashboard-content">
+    <div class="welcome-message">
+      <h2>Welcome to the Cartoon Character Creator Dashboard!</h2>
+      <p>Explore the sections below to create and view your cartoon characters.</p>
+    </div>
+
+    <div class="section-content" id="home">
+      <h2>Home</h2>
+      <p>This is the home section. You can provide information or updates here.</p>
+    </div>
+
+    <div class="section-content character-creator" id="character-creator">
+      <h2>Character Creator</h2>
+      <p>Use the character creator tools to design and customize your own cartoon characters!</p>
+      <!-- Add specific content for the character creator section -->
+    </div>
+
+    <div class="section-content gallery" id="gallery">
+      <h2>Gallery</h2>
+      <p>Explore a gallery of cartoon characters created by you and others.</p>
+      <!-- Add specific content for the gallery section -->
+    </div>
+  </div>
+
+</body>
+</html>
