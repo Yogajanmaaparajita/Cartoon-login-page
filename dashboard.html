@@ -8,28 +8,30 @@
     body {
       margin: 0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fafafa;
     }
 
     header {
       background-color: #ffcc66;
-      padding: 10px;
+      padding: 15px;
       text-align: center;
     }
 
     nav {
       background-color: #333;
-      color: #fff;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      flex-wrap: wrap;
       padding: 10px;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      padding: 8px 16px;
+      padding: 10px 15px;
       border-radius: 5px;
       transition: background-color 0.3s;
+      margin: 5px;
     }
 
     nav a:hover {
@@ -46,24 +48,50 @@
     }
 
     .section-content {
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Add specific styling for different sections as needed */
-
-    .character-creator {
-      background-color: #f6f6f6;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .section-content h2 {
+      margin-top: 0;
+      color: #333;
     }
 
-    .gallery {
-      background-color: #f6f6f6;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 90%;
+        text-align: center;
+      }
+
+      .section-content {
+        margin: 10px;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .welcome-message h2 {
+        font-size: 1.2rem;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
     }
   </style>
 </head>
@@ -74,9 +102,9 @@
   </header>
 
   <nav>
-    <a href="home.html">Home</a>
-    <a href="https://www.canva.com/create/cartoons/">Character Creator</a>
-    <a href="https://pixabay.com/images/search/cartoon%20characters/">Gallery</a>
+    <a href="#home">Home</a>
+    <a href="#character-creator">Character Creator</a>
+    <a href="#gallery">Gallery</a>
   </nav>
 
   <div class="dashboard-content">
@@ -90,18 +118,17 @@
       <p>This is the home section. You can provide information or updates here.</p>
     </div>
 
-    <div class="section-content character-creator" id="character-creator">
+    <div class="section-content" id="character-creator">
       <h2>Character Creator</h2>
       <p>Use the character creator tools to design and customize your own cartoon characters!</p>
-      <!-- Add specific content for the character creator section -->
     </div>
 
-    <div class="section-content gallery" id="gallery">
+    <div class="section-content" id="gallery">
       <h2>Gallery</h2>
       <p>Explore a gallery of cartoon characters created by you and others.</p>
-      <!-- Add specific content for the gallery section -->
     </div>
   </div>
 
 </body>
 </html>
+
